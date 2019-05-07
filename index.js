@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { render } from 'react-dom';
-import Navbar from './Components/Navbar.js';
+import Menu from './Components/Menu.js';
 import './style.css';
 
 class App extends Component {
@@ -14,7 +14,7 @@ class App extends Component {
   render() {
     return (
       <div>
-        <Navbar />
+        <Menu />
       </div>
     );
   }

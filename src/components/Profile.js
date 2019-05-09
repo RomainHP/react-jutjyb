@@ -42,7 +42,7 @@ class Profile extends Component {
       <React.Fragment>
         <Topbar />
         <p/>
-        <Grid container spacing={24 style={{backgroundColor:'blue'}}>
+        <Grid container spacing={24}>
           <Grid item xs={2}>
             <ImageWrapper src="https://i0.wp.com/www.winhelponline.com/blog/wp-content/uploads/2017/12/user.png?fit=256%2C256&quality=100&ssl=1" width='100' height='100' text="Modifier"/>
           </Grid>

@@ -17,7 +17,7 @@ export default class ImageWrapper extends Component {
           height={this.props.height}
           onMouseOut={() => this.setState({hovered: false})}
           onMouseOver={() => this.setState({hovered: true})}
-          style={{opacity: `${this.state.hovered ? '0.5' : '1'}`, display: 'block', margin: '0 auto', cursor: 'pointer'}}
+          style={{opacity: `${this.state.hovered ? '0.5' : '1'}`, filter: `${this.state.hovered ? 'grayscale(100%)' : 'grayscale(0%)'}`, display: 'block', margin: '0 auto', cursor: 'pointer'}}
           onClick={this.props.action}
         />
         <div style={{opacity: `${this.state.hovered ? '1' : '0'}`, textAlign: 'center'}}>

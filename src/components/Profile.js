@@ -5,7 +5,7 @@ import IconButton from '@material-ui/core/IconButton';
 import withStyles from "@material-ui/core/styles/withStyles";
 import Topbar from './Topbar';
 import ImageWrapper from './ImageWrapper';
-import Avatar from '@material-ui/core/Avatar';
+import Grid from '@material-ui/core/Grid';
 
 const styles = {
   avatar: {
@@ -41,7 +41,12 @@ class Profile extends Component {
     return (
       <React.Fragment>
         <Topbar />
-        <ImageWrapper src="https://i0.wp.com/www.winhelponline.com/blog/wp-content/uploads/2017/12/user.png?fit=256%2C256&quality=100&ssl=1" width='100' height='100' text="Modifier"/>
+        <p/>
+        <Grid container spacing={24 style={{backgroundColor:'blue'}}>
+          <Grid item xs={2}>
+            <ImageWrapper src="https://i0.wp.com/www.winhelponline.com/blog/wp-content/uploads/2017/12/user.png?fit=256%2C256&quality=100&ssl=1" width='100' height='100' text="Modifier"/>
+          </Grid>
+        </Grid>
       </React.Fragment>
     )
   }

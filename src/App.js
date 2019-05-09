@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles';
 import './App.css';
+import Routes from './routes'
 import { blue, indigo } from '@material-ui/core/colors'
 
 const theme = createMuiTheme({
@@ -17,7 +18,8 @@ const theme = createMuiTheme({
     fontFamily: [
       '"Lato"',
       'sans-serif'
-    ].join(',')
+    ].join(','),
+    useNextVariants: true
   }
 });
 

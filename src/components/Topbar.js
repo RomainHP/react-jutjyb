@@ -157,7 +157,7 @@ class Topbar extends React.Component {
           <IconButton color="inherit">
             <AccountCircle />
           </IconButton>
-          <p>Profile</p>
+          <p>Profil</p>
         </MenuItem>
       </Menu>
     );
@@ -177,7 +177,7 @@ class Topbar extends React.Component {
                 <SearchIcon />
               </div>
               <InputBase
-                placeholder="Search…"
+                placeholder="Recherche..."
                 classes={{
                   root: classes.inputRoot,
                   input: classes.inputInput,
@@ -192,7 +192,7 @@ class Topbar extends React.Component {
                 </Badge>
               </IconButton>
               <IconButton color="inherit">
-                <Badge badgeContent={17} color="secondary">
+                <Badge badgeContent={7} color="secondary">
                   <NotificationsIcon />
                 </Badge>
               </IconButton>

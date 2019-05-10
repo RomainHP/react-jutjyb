@@ -1,5 +1,5 @@
 import React from 'react'
-import { Route, HashRouter, Switch } from 'react-router-dom'
+import { Route, HashRouter, Switch, Redirect } from 'react-router-dom'
 import Main from './components/Main'
 import Profile from './components/Profile'
 import ScrollToTop from './components/ScrollTop'

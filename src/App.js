@@ -2,12 +2,12 @@ import React, { Component } from 'react';
 import { MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles';
 import './App.css';
 import Routes from './routes'
-import { blue, indigo } from '@material-ui/core/colors'
+import { blue, indigo, white } from '@material-ui/core/colors'
 
 const theme = createMuiTheme({
   palette: {
+    primary: indigo,
     secondary: blue,
-    primary: indigo
   },
   typography: {
     // Use the system font instead of the default Roboto font.

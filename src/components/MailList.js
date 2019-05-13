@@ -5,6 +5,10 @@ import IconButton from '@material-ui/core/IconButton';
 import withStyles from '@material-ui/core/styles/withStyles';
 import Topbar from './Topbar';
 import Mail from './Mail';
+import mailData from './mailData';
+import GridList from '@material-ui/core/GridList';
+import GridListTile from '@material-ui/core/GridListTile';
+import GridListTileBar from '@material-ui/core/GridListTileBar';
 
 const styles = {
 
@@ -22,7 +26,11 @@ class MailList extends Component {
       <React.Fragment>
         <Topbar />
         <p/>
-        <MailComponent message="test" objet="titre"/>
+        <GridList spacing={10}>
+          {mailData.map(msg => (
+            <Mail subject={msg.subject} from={msg.from} message={msg.message}/>
+          ))}
+        </GridList>
       </React.Fragment>
     )
   }

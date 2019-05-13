@@ -6,39 +6,35 @@ import withStyles from '@material-ui/core/styles/withStyles';
 import Topbar from './Topbar';
 import Typography from '@material-ui/core/Typography';
 import Avatar from "@material-ui/core/Avatar";
+import Grid from '@material-ui/core/Grid';
 
 const styles = {
-
+  root: {
+    border: '3px solid green',
+  },
 };
 
 class Mail extends Component {
 
   constructor (props) {
     super(props);
-    this.state = {
-      hidden: false,
-    }
-    this.handleClick = this.handleClick.bind(this);
-  }
-
-  handleClick(e) {
-    this.state.hidden = !this.state.hidden;
   }
 
   render() {
     const { classes } = this.props;
-    const message = "";
-    if (!this.state.hidden) {
-      message = <p>{this.props.message}</p>;
-    }
     return (
-      <div onClick={this.handleClick}>
-        <Avatar>
-          RC
-        </Avatar>
-        <p>{this.props.objet}</p>
-        {message}
-      </div>
+      <Grid container spacing={12} className={classes.root}>
+        <Grid item xs={6}>
+          <Avatar>
+            {this.props.from}
+          </Avatar>
+          {this.props.from}
+        </Grid>
+        <Grid item xs={6}>
+          <p>{this.props.subject}</p>
+          <p>{this.props.message}</p>
+        </Grid>
+      </Grid>
     )
   }
 }

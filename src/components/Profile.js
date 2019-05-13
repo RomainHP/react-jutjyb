@@ -53,6 +53,7 @@ class Profile extends Component {
             </Grid>
             <Grid item xs={10}>
               <Typography variant='h1' align='center' color='text.primary'>Title</Typography>
+              <Typography align='center' color='text.secondary'>Texte Texte Texte Texte Texte Texte Texte Texte Texte Texte Texte Texte Texte Texte Texte Texte Texte Texte Texte Texte Texte Texte Texte Texte Texte Texte Texte Texte Texte Texte Texte Texte Texte Texte Texte Texte Texte Texte Texte Texte Texte Texte Texte Texte Texte Texte Texte Texte Texte Texte Texte Texte Texte Texte Texte Texte Texte Texte Texte Texte </Typography>
             </Grid>
           </Grid>
         </Paper>

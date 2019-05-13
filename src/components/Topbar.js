@@ -125,7 +125,7 @@ class Topbar extends React.Component {
         onClose={this.handleMenuClose}
       >
         <MenuItem onClick={this.handleMobileMenuClose}>
-          <IconButton color="inherit">
+          <IconButton color="inherit" href="/#/mail">
             <Badge badgeContent={0} color="secondary">
               <MailIcon />
             </Badge>
@@ -140,8 +140,8 @@ class Topbar extends React.Component {
           </IconButton>
           <p>Notifications</p>
         </MenuItem>
-        <MenuItem onClick={this.handleMobileMenuClose} href="/#/profile">
-          <IconButton color="inherit">
+        <MenuItem onClick={this.handleMobileMenuClose} >
+          <IconButton color="inherit" href="/#/profile">
             <AccountCircle />
           </IconButton>
           <p>Profil</p>
@@ -173,7 +173,7 @@ class Topbar extends React.Component {
             </div>
             <div className={classes.grow} />
             <div className={classes.sectionDesktop}>
-              <IconButton color="inherit">
+              <IconButton color="inherit" href="/#/mail">
                 <Badge badgeContent={4} color="secondary">
                   <MailIcon />
                 </Badge>
